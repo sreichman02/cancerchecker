@@ -1,0 +1,20 @@
+{% extends "base.html" %} 
+{% block title %} Model Information {% endblock %} 
+{% block content %}
+<h3 align = "center">SkinChecker uses supervized deep learning to give user accurate, skin check results that are comperable to 
+    a dermatologist skin check in the comfort of your own home. This particular model uses the VGG16 model from the paper "Very Deep Convolutional Networks 
+    for Large-Scale Image Recognition" [1]. This convolutional nueral network model is pretrained on the ImageNet Dataset [2], an image classification dataset containing 1000
+    different classifications. Finally, the model was trained on a dataset containing benign and malignant images of moles. 
+</h3>
+<br>
+<br>
+<br>
+
+<h6 align = "center">
+    [1] Simonyan, K., & Zisserman, A. (2014). Very deep convolutional networks for large-scale image recognition. arXiv preprint arXiv:1409.1556.
+</h6>
+<br>
+<h6 align = "center">
+    [2]  Deng, J., Dong, W.,  Socher, R., Li, L. -J., Kai Li and Li Fei-Fei. (2009). ImageNet: A large-scale hierarchical image database. 2009 IEEE Conference on Computer Vision and Pattern Recognition, pp. 248-255, doi: 10.1109/CVPR.2009.5206848.
+</h6>
+{%endblock%}

@@ -1,0 +1,11 @@
+{% extends "base.html" %} 
+{% block title %} Home {% endblock %} 
+{% block content %}
+    {%if img_val < 0.0001%}
+    <h1 align = "center">Result: Benign</h1>
+    <h2 align = "center">The image is classfied as benign. It is important to note that there is around a 2% chance of false negative results for being malignant. </h2>
+    {%else%}
+    <h1 align = "center">Result: Malignant</h1>
+    <h2 align = "center">The image is classfied as malignant. Please check with your dermatologist. It is important to note that there is around a 12% chance of false positive results for being malignant. </h2>
+    {%endif%}
+{% endblock %} 
